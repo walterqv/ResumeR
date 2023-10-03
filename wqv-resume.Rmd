@@ -1,0 +1,97 @@
+---
+name: Walter Quispe
+position: "Data Scientist"
+address: "Simón Bolívar E-1A, Bancopata, Cusco, Perú"
+phone: +51 974 377 276
+profilepic: wqv.png
+www: walterqv.github.io/website/
+email: "walter.quispe@upr.edu"
+twitter: WalterqvPR
+github: walterqv
+linkedin: walterqv
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "I am aiming to deploy my professional knowledge in academia and industry to perform data-driven discovery and decision making process."
+output: vitae::twentyseconds
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Experience
+
+-   Apr 2023 - Present, **Full Time Adjunt Professor**
+    -   Math and Stat Department. San Antonio Abad University, Cusco-Perú
+        - Teaching Graduate and Undergraduate Courses: EP703AES Foundations of Probability, ME814AME Actuarial Statistics, ME841AME Multivariate Statistics I, ME842AME Didactics of Statistics.
+
+ 
+
+-   Sep 2021 - Present, **Quantitative Risk Analyst**.
+    -   Model Risk Management at First Bank of Puerto Rico.
+        -   Understanding, Validating, and Developing advance Machine Learning and Statistical models to comply with regulatory requirements.
+
+ 
+
+-   Sep 2020 - Sep 2021, **Data Scientist**.
+    -   Artificial Intelligence at Banco Popular de Puerto Rico.
+        -   Building intelligent systems by employing advanced Machine Learning algorithms in order to advance business strategy.
+
+ 
+
+-   Jan 2020 - Sep 2020, **Data Science Post Doctoral Research**.
+    -   University of Puerto Rico at Mayaguez.
+        -   "Collaborative Research: Atomic Level Structural Dynamics in Catalysts." Harnessing tools from machine learning to perform data-driven discovery in catalysts, NSF Harnessing Data Revolution Program, Grant OAC-1940179, UPRM.
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Ph.D. Computing and Information Science", "2013-2019", "Univ. of Puerto Rico", "Mayaguez, Puerto Rico, USA",
+  "M.Sc. Mathematics and Statistics", "2003-2006", "Univ. of Puerto Rico", "Mayaguez, Puerto Rico, USA",
+  "B.Sc. Mathematics and Statistics", "1996-2001", "Univ. San Antonio Abad", "Cusco, Perú"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Publications
+
+-   **Rivera, R., Rosenbaum, J., and Quispe, W. (May 2020)**
+
+Excess mortality in the United States during the first three months of the COVID- 19 pandemic, *Epidemiology and Infection, 148, E264. Cambridge University Press*.
+
+-   **Quispe, W. (Dic 2019)**
+
+Temporal outlier detection using dynamic Bayesian networks and probabilistic assciacion rules, *Phd Dissertation, University of Puerto Rico at Mayaguez*.
+
+# Presentations
+
+-   **E. Acuña, W. Quispe, R. Megret, and J. Agosto. (May 2019)**
+
+Clustering using Functional Data Analysis for Honeybees Daily Activity Data, *Latin American Conference on Statistical Computing (ICORS-LACSC) , Guayaquil, Ecuador*.
+
+# Software Skills
+
+```{r}
+tribble(
+ ~Desc,
+ "Python, R, Matlab, SQL, Apache-Spark, Latex"
+) %>% 
+  brief_entries(
+    Desc
+  )
+```
+
+# Interests
+
+```{r}
+tribble(
+ ~Desc,
+ "Data Science, Artificial Intelligence, Machine Learning, Anomaly Detection, Bayesian Statisics, Model Risk Management"
+) %>% 
+  brief_entries(
+    Desc
+  )
+```
